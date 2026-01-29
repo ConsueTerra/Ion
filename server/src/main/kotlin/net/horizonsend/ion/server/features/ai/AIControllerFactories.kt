@@ -91,10 +91,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -157,10 +156,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -216,10 +214,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -282,10 +279,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -349,10 +345,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -415,10 +410,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -484,10 +478,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -552,10 +545,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -617,10 +609,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -683,10 +674,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -751,10 +741,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -818,10 +807,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -886,10 +874,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -954,10 +941,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 
@@ -1061,10 +1047,9 @@ object AIControllerFactories : IonServerComponent() {
 			if (difficultyManager.doNavigation) {
 				builder.addModule(
 					NavigationModule::class, NavigationModule(
-						controller,
-						targeting,
-						difficultyManager
-					)
+                        controller,
+                        targeting
+                    )
 				)
 			}
 

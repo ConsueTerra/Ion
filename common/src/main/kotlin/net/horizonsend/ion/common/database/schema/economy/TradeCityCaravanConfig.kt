@@ -79,6 +79,10 @@ class TradeCityCaravanConfig(
 			return combine(update, setValue(TradeCityCaravanConfig::updatedAt, date))
 		}
 
+		fun getAllowedTerritories(config: TradeCityCaravanConfig) : List<Territory> {
+			return config.allowedDestinations.mapNotNull { Territory.findById(it) }
+		}
+
 		fun setEnabled() {
 			//TODO(Not Implemented)
 		}

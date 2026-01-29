@@ -17,12 +17,13 @@ class GroupSpawner(
 	groupMessage: Component?,
 	individualSpawnMessage: SpawnMessage?,
 	difficultySupplier: (World) -> Supplier<Int>,
+	targetModeSupplier: Supplier<AITarget.TargetMode>,
 ) : MultiSpawner(
 	locationProvider,
 	groupMessage,
 	individualSpawnMessage,
 	difficultySupplier,
-	{ AITarget.TargetMode.PLAYER_ONLY },
+	targetModeSupplier,
 	{ null }
 ) {
 	override fun getShips(): List<SpawnedShip> {

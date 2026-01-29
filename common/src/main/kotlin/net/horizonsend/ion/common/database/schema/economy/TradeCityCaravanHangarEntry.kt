@@ -24,6 +24,7 @@ class TradeCityCaravanHangarEntry(
 	override val _id: Oid<TradeCityCaravanHangarEntry>,
 	val cityTerritory: Oid<Territory>,
 	val soldShipId: Oid<PlayerSoldShip>, //replace with a dedicated entry
+	val aiTemplateKey: String,
 	/** which caravan bucket (trade ship, escort, lead ect this ship belongs to) */
 	var bucket: String? = null,
 	/** who is using the ship at the moment (if any) */
@@ -55,7 +56,7 @@ class TradeCityCaravanHangarEntry(
 			//TODO: also delete stored ship entry
 		}
 
-		fun getAll(owner: Territory, bucket: String?): List<TradeCityCaravanHangarEntry> {
+		fun getAll(owner: Territory): List<TradeCityCaravanHangarEntry> {
 			return TODO("Not Implemented")
 		}
 
@@ -77,6 +78,7 @@ class TradeCityCaravanHangarEntry(
 		fun create(
 			cityTerritory: Oid<Territory>,
 			soldShipId: Oid<PlayerSoldShip>,
+			aiTemplateKey: String,
 			addedBy: SLPlayerId,
 			respawnable: Boolean = false,
 		): Oid<TradeCityCaravanHangarEntry> = trx { sess ->
@@ -87,6 +89,7 @@ class TradeCityCaravanHangarEntry(
 					_id = id,
 					cityTerritory = cityTerritory,
 					soldShipId = soldShipId,
+					aiTemplateKey = aiTemplateKey,
 					addedBy = addedBy,
 					respawnable = respawnable,
 				)

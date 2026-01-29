@@ -56,7 +56,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 
 	// START_TEST
 	val TEST_JAMMER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "test_jammer",
 			type = AI_GUNSHIP,
 			miniMessageName = text("Test Jammer", WATCHER_STANDARD).serialize(miniMessage)
@@ -64,7 +64,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TEST_LOGISTIC = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "test_logistic",
 			type = AI_CORVETTE_LOGISTIC,
 			miniMessageName = text("Test Logistic", WATCHER_STANDARD).serialize(miniMessage)
@@ -72,7 +72,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TEST_BATTLECRUISER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "test_battlecruiser",
 			type = AI_BATTLECRUISER,
 			miniMessageName = text("Test Battlecruiser", WATCHER_STANDARD).serialize(miniMessage)
@@ -80,7 +80,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TEST_DISINTEGRATOR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "test_disintegrator",
 			type = AI_DESTROYER,
 			miniMessageName = text("Test Disintegrator", WATCHER_STANDARD).serialize(miniMessage)
@@ -88,7 +88,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TEST_CYCLE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "test_cycle",
 			type = AI_FRIGATE,
 			miniMessageName = text("Test Cycle", WATCHER_STANDARD).serialize(miniMessage)
@@ -99,7 +99,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	// START_WATCHERS
 
 	val VERDOLITH = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Verdolith",
 			type = AI_FRIGATE,
 			miniMessageName = text("Verdolith", WATCHER_STANDARD).serialize(miniMessage),
@@ -126,7 +126,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TERALITH = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Teralith",
 			type = AI_FRIGATE,
 			miniMessageName = text("Teralith", WATCHER_STANDARD).serialize(miniMessage),
@@ -153,7 +153,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val ARBOREALITH = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Arborealith",
 			type = AI_DESTROYER,
 			miniMessageName = text("Arborealith", WATCHER_STANDARD).serialize(miniMessage),
@@ -189,7 +189,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	//START 吃饭人
 
 	val MIANBAOZHA = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Mianbaozha",
 			type = AI_STARFIGHTER,
 			miniMessageName = text("Mianbaozha", 吃饭人_STANDARD).serialize(miniMessage),
@@ -197,7 +197,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val LOUMAI = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Loumai",
 			type = AI_GUNSHIP,
 			miniMessageName = text("Loumai", 吃饭人_STANDARD).serialize(miniMessage),
@@ -219,7 +219,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val MIANBAO = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Mianbao",
 			type = AI_CORVETTE,
 			miniMessageName = text("Mianbao", 吃饭人_STANDARD).serialize(miniMessage),
@@ -241,7 +241,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val MALINGSHU = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Malingshu",
 			type = AI_FRIGATE,
 			miniMessageName = text("Malingshu", 吃饭人_STANDARD).serialize(miniMessage),
@@ -268,7 +268,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val FASHIGUN = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Fashigun",
 			type = AI_DESTROYER,
 			miniMessageName = text("Fashigun", 吃饭人_STANDARD).serialize(miniMessage),
@@ -308,7 +308,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	// START_PIRATE
 
 	val ISKAT = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Iskat",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Iskat"
@@ -316,7 +316,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val VOSS = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Voss",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Voss"
@@ -324,7 +324,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val HECTOR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Hector",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Hector"
@@ -332,7 +332,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val HIRO = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Hiro",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Hiro"
@@ -340,7 +340,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val WASP = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Wasp",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Wasp"
@@ -348,7 +348,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val FRENZ = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Frenz",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Frenz"
@@ -356,7 +356,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TEMPEST = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Tempest",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Tempest"
@@ -364,7 +364,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val VELASCO = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Velasco",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<${PIRATE_LIGHT_RED.asHexString()}>Velasco"
@@ -372,7 +372,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val ANAAN = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Anaan",
 			type = AI_GUNSHIP,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Anaan",
@@ -380,7 +380,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val VENDETTA = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Vendetta",
 			type = AI_GUNSHIP,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Vendetta",
@@ -388,7 +388,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val CORMORANT = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Cormorant",
 			type = AI_GUNSHIP,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Cormorant",
@@ -396,7 +396,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val MANTIS = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Mantis",
 			type = AI_GUNSHIP,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Mantis",
@@ -406,7 +406,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val HERNSTEIN = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Hernstein",
 			type = AI_GUNSHIP,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Hernstein",
@@ -416,7 +416,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val FYR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Fyr",
 			type = AI_GUNSHIP,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Fyr",
@@ -424,7 +424,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val BLOODSTAR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Bloodstar",
 			type = AI_CORVETTE,
 			miniMessageName = "<${PIRATE_SATURATED_RED.asHexString()}>Bloodstar",
@@ -442,7 +442,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	// START_EXPLORER
 
 	val WAYFINDER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Wayfinder",
 			type = AI_TRANSPORT,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Wayfinder",
@@ -450,7 +450,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val SPARROW = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Sparrow",
 			type = AI_SHUTTLE,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Sparrow",
@@ -458,7 +458,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val NIMBLE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Nimble",
 			type = AI_SHUTTLE,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Nimble",
@@ -466,7 +466,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val DESSLE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Dessle",
 			type = AI_LIGHT_FREIGHTER,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Dessle <${HE_LIGHT_GRAY.asHexString()}>OldOreData Transporter",
@@ -474,7 +474,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val MINHAUL_CHETHERITE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Minhaul_chetherite",
 			type = AI_SHUTTLE,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Minhaul <${HE_LIGHT_GRAY.asHexString()}>[<light_purple>Chetherite<${HE_LIGHT_GRAY.asHexString()}>]",
@@ -482,7 +482,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val MINHAUL_REDSTONE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Minhaul_redstone",
 			type = AI_SHUTTLE,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Minhaul <${HE_LIGHT_GRAY.asHexString()}>[<red>Redstone<${HE_LIGHT_GRAY.asHexString()}>]",
@@ -490,7 +490,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val MINHAUL_TITANIUM = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Minhaul_chetherite",
 			type = AI_SHUTTLE,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Minhaul <${HE_LIGHT_GRAY.asHexString()}>[<gray>Titanium<${HE_LIGHT_GRAY.asHexString()}>]",
@@ -498,7 +498,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val EXOTRAN_TITANIUM = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Exotran_titanium",
 			type = AI_LIGHT_FREIGHTER,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Exotran <${HE_LIGHT_GRAY.asHexString()}>[<gray>Titanium<${HE_LIGHT_GRAY.asHexString()}>]",
@@ -506,7 +506,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val EXOTRAN_CHETHERITE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Exotran_chetherite",
 			type = AI_LIGHT_FREIGHTER,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Exotran <${HE_LIGHT_GRAY.asHexString()}>[<light_purple>Chetherite<${HE_LIGHT_GRAY.asHexString()}>]",
@@ -514,7 +514,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val EXOTRAN_REDSTONE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Exotran_redstone",
 			type = AI_LIGHT_FREIGHTER,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Exotran <${HE_LIGHT_GRAY.asHexString()}>[<red>Redstone<${HE_LIGHT_GRAY.asHexString()}>]",
@@ -522,7 +522,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val AMPH = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Amph",
 			type = AI_TRANSPORT,
 			miniMessageName = "<${EXPLORER_MEDIUM_CYAN.asHexString()}>Amph",
@@ -533,7 +533,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	// START_PRIVATEER
 
 	val BULWARK = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Bulwark",
 			type = AI_CORVETTE,
 			miniMessageName = "<$PRIVATEER_DARK_TEAL>Bulwark",
@@ -547,7 +547,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val RESOLUTE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Resolute",
 			type = AI_DESTROYER,
 			miniMessageName = "<$PRIVATEER_DARK_TEAL>Resolute",
@@ -561,7 +561,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val CONTRACTOR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Contractor",
 			type = AI_GUNSHIP,
 			miniMessageName = "<$PRIVATEER_MEDIUM_TEAL>Contractor",
@@ -575,7 +575,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val DAGGER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Dagger",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Dagger",
@@ -583,7 +583,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val DAYBREAK = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Daybreak",
 			type = AI_CORVETTE,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Daybreak",
@@ -597,7 +597,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val PATROLLER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Patroller",
 			type = AI_GUNSHIP,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Patroller",
@@ -605,7 +605,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val PROTECTOR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Protector",
 			type = AI_GUNSHIP,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Protector",
@@ -613,7 +613,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val VETERAN = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Veteran",
 			type = AI_GUNSHIP,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Veteran",
@@ -621,7 +621,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TENETA = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Teneta",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Teneta",
@@ -629,7 +629,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val FURIOUS = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Furious",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Furious",
@@ -637,7 +637,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val INFLICT = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Inflict",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Inflict",
@@ -645,7 +645,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val PIONEER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Pioneer",
 			type = AI_INTERCEPTOR,
 			miniMessageName = "<$PRIVATEER_LIGHT_TEAL>Pioneer",
@@ -656,7 +656,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	// START_MINING_GUILD
 
 	val ANGLE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Angle",
 			type = AI_BARGE,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Angle",
@@ -666,7 +666,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val DUNKLEOSTEUS = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Dunkleosteus",
 			type = AI_HEAVY_FREIGHTER,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Dunkleosteus",
@@ -679,7 +679,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val GROUPER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Grouper",
 			type = AI_MEDIUM_FREIGHTER,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Grouper",
@@ -689,7 +689,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val OSTRICH = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Ostrich",
 			type = AI_LIGHT_FREIGHTER,
 			miniMessageName = "<$MINING_CORP_DARK_ORANGE>Ostrich",
@@ -703,7 +703,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val WOODPECKER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Woodpecker",
 			type = AI_SHUTTLE,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Woodpecker",
@@ -711,7 +711,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val BEAVER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Beaver",
 			type = AI_TRANSPORT,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Beaver",
@@ -721,7 +721,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val BADGER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Badger",
 			type = AI_LIGHT_FREIGHTER,
 			miniMessageName = "<$MINING_CORP_DARK_ORANGE>Badger",
@@ -730,7 +730,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TYPE_V11 = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "typeV11",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Type <$HE_LIGHT_GRAY>V-11",
@@ -738,7 +738,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TYPEA21B = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "typeA21b",
 			type = AI_SHUTTLE,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Type <$HE_LIGHT_GRAY>A-21b",
@@ -746,7 +746,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val TYPEI41 = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "typeI41",
 			type = AI_SHUTTLE,
 			miniMessageName = "<$MINING_CORP_LIGHT_ORANGE>Type <$HE_LIGHT_GRAY>I-41",
@@ -757,7 +757,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	// START_TSAII
 
 	val SWARMER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Swarmer",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$TSAII_DARK_ORANGE>Swarmer",
@@ -765,7 +765,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val SCYTHE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Scythe",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<$TSAII_DARK_ORANGE>Scythe",
@@ -773,7 +773,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val RAIDER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Raider",
 			type = AI_GUNSHIP,
 			miniMessageName = "<$TSAII_VERY_DARK_ORANGE>Raider",
@@ -781,7 +781,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val REAVER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Reaver",
 			type = AI_FRIGATE,
 			miniMessageName = "<$TSAII_VERY_DARK_ORANGE>Reaver",
@@ -803,7 +803,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val BASTION = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Swarmer",
 			type = AI_BATTLECRUISER,
 			miniMessageName = "<$TSAII_VERY_DARK_ORANGE>Bastion",
@@ -812,7 +812,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 
 	// END_TSAII
 	val SKUTTLE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Skuttle",
 			type = AI_STARFIGHTER,
 			miniMessageName = "<dark_red>Skuttle",
@@ -820,7 +820,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val PUMPKIN_DEVOURER = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "pumpkin_devourer",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<#FFA500>Pumpkin Devourer",
@@ -828,7 +828,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val PUMPKIN_KIN = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "small_pumpkin",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<#FFA500>Pumpkin Kin",
@@ -836,7 +836,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val DREDGE = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Dredge",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<$ABYSSAL_DESATURATED_RED>Dredge",
@@ -844,7 +844,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val EMPEROR = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Emperor",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<$ABYSSAL_LIGHT_RED>Emperor",
@@ -852,7 +852,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val HIGH_PRIESTESS = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "HighPriestess",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<$ABYSSAL_DARK_RED>High Priestess",
@@ -860,7 +860,7 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val GRAFT = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Graft",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<$ABYSSAL_DARK_RED>Graft",
@@ -868,14 +868,14 @@ object StarshipTemplateRegistry : IonServerComponent(true) {
 	)
 
 	val CHARM = registerTemplate(
-		StarshipTemplate(
+		StarshipSchematicTemplate(
 			schematicName = "Charm",
 			type = UNIDENTIFIEDSHIP,
 			miniMessageName = "<$ABYSSAL_DARK_RED>Charm",
 		)
 	)
 
-	private fun registerTemplate(default: StarshipTemplate): StarshipTemplate {
+	private fun registerTemplate(default: StarshipSchematicTemplate): StarshipSchematicTemplate {
 		return Configuration.loadOrDefault(TEMPLATE_DIRECTORY, "${default.schematicName}.json", default)
 	}
 }

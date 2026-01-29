@@ -30,7 +30,6 @@ import kotlin.math.roundToInt
 class NavigationModule(
 	controller: AIController,
 	val targetModule: EnmityModule,
-	val difficulty: DifficultyModule,
 	val engageHyperdiveRange: Double = 1000.0
 ) : AIModule(controller, true) {
 	private val tickRate = 20 * 10

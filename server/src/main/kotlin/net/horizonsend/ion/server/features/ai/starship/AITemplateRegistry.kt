@@ -1754,10 +1754,10 @@ object AITemplateRegistry {
 		return template
 	}
 
-	private fun builder(identifier: String, template: StarshipTemplate, controllerFactory: AIControllerFactory, engagementRange: Double): Builder =
+	private fun builder(identifier: String, template: StarshipSchematicTemplate, controllerFactory: AIControllerFactory, engagementRange: Double): Builder =
 		Builder(identifier, controllerFactory, template, engagementRange)
 
-	class Builder(val identifier: String, private val controllerFactory: AIControllerFactory, val template: StarshipTemplate, val engagementRange: Double) {
+	class Builder(val identifier: String, private val controllerFactory: AIControllerFactory, val template: StarshipSchematicTemplate, val engagementRange: Double) {
 		private val additionalModules: MutableList<BehaviorConfiguration.AdditionalModule> = mutableListOf()
 		private val rewardProviders: MutableList<AITemplate.AIRewardsProviderConfiguration> = mutableListOf()
 

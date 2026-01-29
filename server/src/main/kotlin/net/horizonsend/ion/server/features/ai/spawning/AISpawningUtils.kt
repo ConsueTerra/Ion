@@ -5,6 +5,7 @@ import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap
 import net.horizonsend.ion.server.command.admin.debug
 import net.horizonsend.ion.server.features.ai.configuration.AITemplate
 import net.horizonsend.ion.server.features.ai.module.misc.GlowModule
+import net.horizonsend.ion.server.features.ai.starship.StarshipSchematicTemplate
 import net.horizonsend.ion.server.features.ai.starship.StarshipTemplate
 import net.horizonsend.ion.server.features.space.Space
 import net.horizonsend.ion.server.features.starship.DeactivatedPlayerStarships
@@ -92,8 +93,10 @@ fun createShipFromTemplate(
 	suffix: String,
 	callback: (ActiveControlledStarship) -> Unit = {}
 ) {
-	val schematic = template.getSchematic() ?: throw SpawningException(
-		"Schematic not found for ${template.schematicName} at ${template.schematicFile.toURI()}",
+	val schematic = template.getClipboard() ?: throw SpawningException(
+		if (template is StarshipSchematicTemplate) {
+			"Schematic not found for ${template.schematicName} at ${template.schematicFile.toURI()}"
+		} else {"Clipboard source for ${template.miniMessageName} not found"} ,
 		location.world,
 		Vec3i(location)
 	)

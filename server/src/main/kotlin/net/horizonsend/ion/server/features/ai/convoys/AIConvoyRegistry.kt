@@ -57,6 +57,8 @@ import java.util.function.Supplier
 object AIConvoyRegistry {
 	private val templates = mutableMapOf<String, AIConvoyTemplate<out ConvoyContext>>()
 
+	//TODO: fix or delete this, might not be useful anymore.
+	/*
 	val SMALL_TC_CARAVAN = caravan("SMALL_TC_CARAVAN", 2) { ctx ->
 		val city = ctx.city
 		val route = TraceCityCaravanRoute(
@@ -74,6 +76,7 @@ object AIConvoyRegistry {
 			controllerModifier = { controller -> addCaravanModule(controller, route, "SMALL_TC_CARAVAN") }
 		)
 	}
+	 */
 
 	fun makeSmallCaravanComponents(route: ConvoyRoute, difficulty: (World) -> Supplier<Int>, targetMode: Supplier<AITarget.TargetMode>): List<SpawnerMechanic> {
 		return listOf(
@@ -264,11 +267,6 @@ object AIConvoyRegistry {
 	) {
 		val targeting = controller.getCoreModuleByType<EnmityModule>()!!
 		targeting.enmityFilter = EnmityModule.naughtyFilter(controller)
-
-		val difficulty = controller.getCoreModuleByType<DifficultyModule>()!!
-		if (controller.getCoreModuleByType<NavigationModule>() == null) {
-			controller.addCoreModule(NavigationModule(controller,targeting, difficulty))
-		}
 		addCaravanModule(controller,route,templateId)
 	}
 
@@ -375,6 +373,7 @@ object AIConvoyRegistry {
 					}
 				}
 		}
+
 		controller.addUtilModule(
 			CaravanModule(
 				controller,
@@ -384,7 +383,11 @@ object AIConvoyRegistry {
 				route
 			)
 		)
-		controller.getCoreModuleByType<EnmityModule>()?.removeAnchor()
+		val targeting = controller.getCoreModuleByType<EnmityModule>()!!
+		targeting.removeAnchor()
+		if (controller.getCoreModuleByType<NavigationModule>() == null) {
+			controller.addCoreModule(NavigationModule(controller, targeting))
+		}
 		controller.addUtilModule(DespawnModule(controller, DespawnModule.neverDespawn))
 	}
 

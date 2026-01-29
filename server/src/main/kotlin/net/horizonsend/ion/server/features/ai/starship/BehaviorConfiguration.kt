@@ -2,6 +2,9 @@ package net.horizonsend.ion.server.features.ai.starship
 
 import kotlinx.serialization.Contextual
 import kotlinx.serialization.Serializable
+import net.horizonsend.ion.common.database.Oid
+import net.horizonsend.ion.common.database.schema.economy.TradeCityCaravanHangarEntry
+import net.horizonsend.ion.common.database.schema.economy.TradeCityCaravanLaunch
 import net.horizonsend.ion.common.utils.text.miniMessage
 import net.horizonsend.ion.server.features.ai.configuration.AIEmities
 import net.horizonsend.ion.server.features.ai.configuration.AITemplate
@@ -10,6 +13,7 @@ import net.horizonsend.ion.server.features.ai.module.misc.EnmityMessageModule
 import net.horizonsend.ion.server.features.ai.module.misc.EnmityTriggerMessage
 import net.horizonsend.ion.server.features.ai.module.misc.FleeMessageModule
 import net.horizonsend.ion.server.features.ai.module.misc.FleeTriggerMessage
+import net.horizonsend.ion.server.features.ai.module.misc.LeasedModule
 import net.horizonsend.ion.server.features.ai.module.misc.RadiusMessageModule
 import net.horizonsend.ion.server.features.ai.module.misc.ReinforcementSpawnerModule
 import net.horizonsend.ion.server.features.ai.module.misc.SmackTalkModule
@@ -21,7 +25,7 @@ import net.kyori.adventure.text.minimessage.MiniMessage
 import java.util.function.Consumer
 
 @Serializable
-class BehaviorConfiguration(
+data class BehaviorConfiguration(
 	val controllerFactory: String = "STARFIGHTER",
 	val maxSpeed: Int = -1,
 	val engagementRange: Double,
@@ -154,6 +158,17 @@ class BehaviorConfiguration(
 				delay = delay,
 				controllerModifiers = list
 			)
+		}
+	}
+
+	//dummy class
+	data class LeasedInformation(
+		val hangarEntry : TradeCityCaravanHangarEntry,
+		val launchId : Oid<TradeCityCaravanLaunch>
+	) : AdditionalModule {
+		override val name: String = "hangarEntry"
+		override fun createModule(controller: AIController): LeasedModule {
+			return LeasedModule(controller, hangarEntry, launchId)
 		}
 	}
 }
